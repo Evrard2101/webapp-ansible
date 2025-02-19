@@ -1,0 +1,5 @@
+[Web]
+srv-web-01 ansible_host=192.168.32.156 # L'adresse IP de votre serveur
+
+[local]
+localhost # Poste de contrôle 
