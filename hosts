@@ -1,5 +1,16 @@
-[Web]
-srv-web-01 ansible_host=192.168.32.156 # L'adresse IP de votre serveur
+all:
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+  hosts:
+    control:
+      ansible_connection: local
+prod:
+  hosts:
+    srv-web-01:
+       ansible_host: 192.168.32.137
 
-[local]
-localhost # Poste de contrôle 
+
+
+
+
+
